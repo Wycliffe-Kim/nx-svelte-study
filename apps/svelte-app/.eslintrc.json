@@ -1,0 +1,18 @@
+{
+  "extends": ["plugin:@nx/react", "../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx", "*.svelte"],
+      "rules": {}
+    },
+    {
+      "files": ["*.ts", "*.tsx", "*.svelte"],
+      "rules": {}
+    },
+    {
+      "files": ["*.js", "*.jsx", "*.svelte"],
+      "rules": {}
+    }
+  ]
+}
