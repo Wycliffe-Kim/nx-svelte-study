@@ -15,4 +15,5 @@
   <a href="#/welcome-to-svelte">Welcome to svelte</a>
   <a href="#/your-first-component">Your first component</a>
   <a href="#/dynamic-attributes">Dynamic attributes</a>
+  <a href="#/styling">Styling</a>
 </section>
