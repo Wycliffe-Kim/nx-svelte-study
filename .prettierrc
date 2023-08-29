@@ -17,7 +17,7 @@
         "svelteStrictMode": true,
         "svelteBracketNewLine": true,
         "svelteAllowShorthand": true,
-        "svelteIndentScriptAndStyle": false,
+        "svelteIndentScriptAndStyle": true,
         "svelteSingleQuote": true
       }
     }
