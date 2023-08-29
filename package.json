@@ -2,7 +2,10 @@
   "name": "nx-svelte-study",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "svelte:app": "nx g @nxext/svelte:app",
+    "svelte:lib": "nx g @nxext/svelte:library"
+  },
   "private": true,
   "type": "module",
   "dependencies": {
