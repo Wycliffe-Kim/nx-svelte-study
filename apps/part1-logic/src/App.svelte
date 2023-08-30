@@ -1,11 +1,11 @@
 <script lang="ts">
   import { Links } from '@nx-svelte-study/atoms';
-  import IfBlocks from './1. If blocks/App.svelte';
-  import ElseBlocks from './2. Else blocks/App.svelte';
-  import ElseIfBlocks from './3. Else-if blocks/App.svelte';
-  import EachBlocks from './4. Each blocks/App.svelte';
-  import KeyedEachBlocks from './5. Keyed each blocks/App.svelte';
-  import AwaitBlocks from './6. Await blocks/App.svelte';
+  import IfBlocks from './1. If blocks/IfBlocks.svelte';
+  import ElseBlocks from './2. Else blocks/ElseBlocks.svelte';
+  import ElseIfBlocks from './3. Else-if blocks/ElseIfBlocks.svelte';
+  import EachBlocks from './4. Each blocks/EachBlocks.svelte';
+  import KeyedEachBlocks from './5. Keyed each blocks/KeyedEachBlocks.svelte';
+  import AwaitBlocks from './6. Await blocks/AwaitBlocks.svelte';
 </script>
 
 <Links

@@ -1,11 +1,11 @@
 <script lang="ts">
   import { Links } from '@nx-svelte-study/atoms';
-  import WelcomeToSvelte from './1. Welcome to Svelte/App.svelte';
-  import YourFirstComponent from './2. Your first component/App.svelte';
-  import DynamicAttributes from './3. Dynamic attributes/App.svelte';
-  import Styling from './4. Styling/App.svelte';
-  import NestedComponents from './5. Nested components/App.svelte';
-  import HtmlTags from './6. HTML tags/App.svelte';
+  import WelcomeToSvelte from './1. Welcome to Svelte/WelcomeToSvelte.svelte';
+  import YourFirstComponent from './2. Your first component/YourFirstComponent.svelte';
+  import DynamicAttributes from './3. Dynamic attributes/DynamicAttributes.svelte';
+  import Styling from './4. Styling/Styling.svelte';
+  import NestedComponents from './5. Nested components/NestedComponents.svelte';
+  import HtmlTags from './6. HTML tags/HtmlTags.svelte';
 </script>
 
 <Links

@@ -1,8 +1,8 @@
 <script lang="ts">
   import { Links } from '@nx-svelte-study/atoms';
-  import DeclaringProps from './1. Declaring props/App.svelte';
-  import DefaultValues from './2. Default values/App.svelte';
-  import SpreadProps from './3. Spread props/App.svelte';
+  import DeclaringProps from './1. Declaring props/DeclaringProps.svelte';
+  import DefaultValues from './2. Default values/DefaultValues.svelte';
+  import SpreadProps from './3. Spread props/SpreadProps.svelte';
 </script>
 
 <Links
