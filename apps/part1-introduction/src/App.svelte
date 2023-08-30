@@ -5,6 +5,7 @@
   import DynamicAttributes from './3. Dynamic attributes/App.svelte';
   import Styling from './4. Styling/App.svelte';
   import NestedComponents from './5. Nested components/App.svelte';
+  import HtmlTags from './6. HTML tags/App.svelte';
   import Router from 'svelte-spa-router';
 
   const routes = {
@@ -14,6 +15,7 @@
     '/dynamic-attributes': DynamicAttributes,
     '/styling': Styling,
     '/nested-components': NestedComponents,
+    '/html-tags': HtmlTags,
   };
 </script>
 

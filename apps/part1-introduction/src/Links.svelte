@@ -17,4 +17,5 @@
   <a href="#/dynamic-attributes">Dynamic attributes</a>
   <a href="#/styling">Styling</a>
   <a href="#/nested-components">Nested components</a>
+  <a href="#/html-tags">HTML tags</a>
 </section>
