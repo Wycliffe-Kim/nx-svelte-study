@@ -13,7 +13,7 @@
       "files": ["*.svelte"],
       "options": {
         "plugins": ["prettier-plugin-svelte"],
-        "svelteSortOrder": "options-scripts-styles-markup",
+        "svelteSortOrder": "options-scripts-markup-styles",
         "svelteStrictMode": true,
         "svelteBracketNewLine": true,
         "svelteAllowShorthand": true,

@@ -2,6 +2,9 @@
   import Nested from './Nested.svelte';
 </script>
 
+<p>This is paragraph.</p>
+<Nested />
+
 <style>
   p {
     color: goldenrod;
@@ -9,6 +12,3 @@
     font-size: 2em;
   }
 </style>
-
-<p>This is paragraph.</p>
-<Nested />

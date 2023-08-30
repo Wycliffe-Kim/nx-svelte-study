@@ -1,14 +1,3 @@
-<style>
-  a {
-    display: block;
-  }
-  .links {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 10px 0;
-  }
-</style>
-
 <section class="links">
   <h1>Part1. Introduction</h1>
   <a href="#/">Home</a>
@@ -19,3 +8,14 @@
   <a href="#/nested-components">Nested components</a>
   <a href="#/html-tags">HTML tags</a>
 </section>
+
+<style>
+  a {
+    display: block;
+  }
+  .links {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+  }
+</style>

@@ -1,3 +1,5 @@
+<p>This is paragraph.</p>
+
 <style>
   p {
     color: goldenrod;
@@ -5,5 +7,3 @@
     font-size: 2em;
   }
 </style>
-
-<p>This is paragraph.</p>
