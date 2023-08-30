@@ -1,0 +1,37 @@
+{
+  "name": "atoms",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/atoms/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "libs/atoms/**/*.{ts,svelte,spec.ts}"
+        ]
+      }
+    },
+    "check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "svelte-check",
+        "cwd": "libs/atoms"
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/libs/atoms"
+      }
+    }
+  }
+}
