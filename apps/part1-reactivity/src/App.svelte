@@ -1,30 +1,21 @@
 <script lang="ts">
-	export let name: string;
+  import Links from './Links.svelte';
+  import Assignments from './1. Assignments/App.svelte';
+  import Declarations from './2. Declarations/App.svelte';
+  import Statements from './3. Statements/App.svelte';
+  import UpdatingArraysAndObjects from './4. Updating arrays and objects/App.svelte';
+  import Router from 'svelte-spa-router';
+
+  const routes = {
+    '/': Assignments,
+    '/assignments': Assignments,
+    '/declarations': Declarations,
+    '/statements': Statements,
+    '/updating-arrays-and-objects': UpdatingArraysAndObjects,
+  };
 </script>
 
 <main>
-	<h1>Welcome {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+  <Links />
+  <Router {routes} />
 </main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
