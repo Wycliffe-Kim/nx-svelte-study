@@ -16,4 +16,5 @@
   <a href="#/your-first-component">Your first component</a>
   <a href="#/dynamic-attributes">Dynamic attributes</a>
   <a href="#/styling">Styling</a>
+  <a href="#/nested-components">Nested components</a>
 </section>
