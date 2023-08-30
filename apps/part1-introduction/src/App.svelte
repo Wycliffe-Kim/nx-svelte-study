@@ -1,14 +1,25 @@
 <script lang="ts">
-  import Links from './Links.svelte';
+  import { Links } from '@nx-svelte-study/atoms';
   import WelcomeToSvelte from './1. Welcome to Svelte/App.svelte';
   import YourFirstComponent from './2. Your first component/App.svelte';
   import DynamicAttributes from './3. Dynamic attributes/App.svelte';
   import Styling from './4. Styling/App.svelte';
   import NestedComponents from './5. Nested components/App.svelte';
   import HtmlTags from './6. HTML tags/App.svelte';
-  import Router from 'svelte-spa-router';
+</script>
 
-  const routes = {
+<Links
+  headTitle="Part 1: Introduction"
+  titles="{{
+    '/': 'Home',
+    '/welcome-to-svelte': 'Welcome to Svelte',
+    '/your-first-component': 'Your first component',
+    '/dynamic-attributes': 'Dynamic attributes',
+    '/styling': 'Styling',
+    '/nested-components': 'Nested components',
+    '/html-tags': 'HTML tags',
+  }}"
+  routes="{{
     '/': WelcomeToSvelte,
     '/welcome-to-svelte': WelcomeToSvelte,
     '/your-first-component': YourFirstComponent,
@@ -16,10 +27,5 @@
     '/styling': Styling,
     '/nested-components': NestedComponents,
     '/html-tags': HtmlTags,
-  };
-</script>
-
-<main>
-  <Links />
-  <Router {routes} />
-</main>
+  }}"
+/>

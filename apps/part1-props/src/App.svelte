@@ -1,19 +1,22 @@
 <script lang="ts">
-  import Links from './Links.svelte';
+  import { Links } from '@nx-svelte-study/atoms';
   import DeclaringProps from './1. Declaring props/App.svelte';
   import DefaultValues from './2. Default values/App.svelte';
   import SpreadProps from './3. Spread props/App.svelte';
-  import Router from 'svelte-spa-router';
+</script>
 
-  const routes = {
+<Links
+  headTitle="Part 1: Props"
+  titles="{{
+    '/': 'Home',
+    '/declaring-props': 'Declaring props',
+    '/default-values': 'Default values',
+    '/spread-props': 'Spread props',
+  }}"
+  routes="{{
     '/': DeclaringProps,
     '/declaring-props': DeclaringProps,
     '/default-values': DefaultValues,
     '/spread-props': SpreadProps,
-  };
-</script>
-
-<main>
-  <Links />
-  <Router {routes} />
-</main>
+  }}"
+/>
