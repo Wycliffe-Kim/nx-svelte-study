@@ -15,8 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-svelte-study/atoms": ["libs/atoms/src"],
-      "@nx-svelte-study/atoms/*": ["libs/atoms/src/*"]
+      "@nx-svelte-study/atoms": ["libs/atoms/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
