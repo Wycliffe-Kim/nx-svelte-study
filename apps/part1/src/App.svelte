@@ -7,6 +7,7 @@
   import Events from './5. Events/App.svelte';
   import Bindings from './6. Bindings/App.svelte';
   import Lifecycle from './7. Lifecycle/App.svelte';
+  import Stores from './8. Stores/App.svelte';
 </script>
 
 <Links
@@ -19,6 +20,7 @@
     '/events': 'Events',
     '/bindings': 'Bindings',
     '/lifecycle': 'Lifecycle',
+    '/stores': 'Stores',
   }}"
   routes="{{
     '/': Introduction,
@@ -36,5 +38,7 @@
     '/bindings/:subPage': Bindings,
     '/lifecycle': Lifecycle,
     '/lifecycle/:subPage': Lifecycle,
+    '/stores': Stores,
+    '/stores/:subPage': Stores,
   }}"
 />
