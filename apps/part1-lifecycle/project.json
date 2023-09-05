@@ -1,0 +1,87 @@
+{
+  "name": "part1-lifecycle",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/part1-lifecycle/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/part1-lifecycle/**/*.{ts,svelte,spec.ts}"
+        ]
+      }
+    },
+    "check": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "svelte-check",
+        "cwd": "apps/part1-lifecycle"
+      }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "outputPath": "dist/apps/part1-lifecycle"
+      },
+      "configurations": {
+        "development": {
+          "mode": "development"
+        },
+        "production": {
+          "mode": "production"
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "part1-lifecycle:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "part1-lifecycle:build:development",
+          "hmr": true
+        },
+        "production": {
+          "buildTarget": "part1-lifecycle:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "part1-lifecycle:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "part1-lifecycle:build:development"
+        },
+        "production": {
+          "buildTarget": "part1-lifecycle:build:production"
+        }
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": [
+        "{options.reportsDirectory}"
+      ],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/apps/part1-lifecycle"
+      }
+    }
+  }
+}
