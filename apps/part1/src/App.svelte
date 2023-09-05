@@ -4,6 +4,7 @@
   import Reactivity from './2. Reactivity/App.svelte';
   import Props from './3. Props/App.svelte';
   import Logic from './4. Logic/App.svelte';
+  import Events from './5. Events/App.svelte';
 </script>
 
 <Links
@@ -13,6 +14,7 @@
     '/reactivity': 'Reactivity',
     '/props': 'Props',
     '/logic': 'Logic',
+    '/events': 'Events',
   }}"
   routes="{{
     '/': Introduction,
@@ -24,5 +26,7 @@
     '/props/:subPage': Props,
     '/logic': Logic,
     '/logic/:subPage': Logic,
+    '/events': Events,
+    '/events/:subPage': Events,
   }}"
 />
