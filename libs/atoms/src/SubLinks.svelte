@@ -17,6 +17,7 @@
   {#each Object.entries(subTitles) as [subPage, subTitle]}
     <a href="#/{prefixTitle}/{subPage}">{subTitle}</a>
   {/each}
+  <br />
   {#each Object.entries(subPages) as [subPage, SubPage]}
     {#if params.subPage === subPage}
       <SubPage />
