@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { FadeParams, fade } from 'svelte/transition';
+  import { FadeParams, fade, TransitionConfig } from 'svelte/transition';
   import { elasticOut } from 'svelte/easing';
 
   let visible = true;
 
-  const spin = (_: Element, { duration }: FadeParams) => {
+  const spin = (_: Element, { duration }: FadeParams): TransitionConfig => {
     return {
       duration,
       css: (t) => {
