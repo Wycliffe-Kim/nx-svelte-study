@@ -5,6 +5,7 @@
   import Props from './3. Props/App.svelte';
   import Logic from './4. Logic/App.svelte';
   import Events from './5. Events/App.svelte';
+  import Bindings from './6. Bindings/App.svelte';
 </script>
 
 <Links
@@ -15,6 +16,7 @@
     '/props': 'Props',
     '/logic': 'Logic',
     '/events': 'Events',
+    '/bindings': 'Bindings',
   }}"
   routes="{{
     '/': Introduction,
@@ -28,5 +30,7 @@
     '/logic/:subPage': Logic,
     '/events': Events,
     '/events/:subPage': Events,
+    '/bindings': Bindings,
+    '/bindings/:subPage': Bindings,
   }}"
 />
