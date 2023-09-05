@@ -4312,6 +4312,11 @@ electron-to-chromium@^1.4.477:
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.4.503.tgz#7bd43927ea9b4198697672d28d8fbd0da016a7a1"
   integrity sha512-LF2IQit4B0VrUHFeQkWhZm97KuJSGF2WJqq1InpY+ECpFRkXd8yTIaTtJxsO0OKDmiBYwWqcrNaXOurn2T2wiA==
 
+elizabot@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/elizabot/-/elizabot-0.0.3.tgz#1ed756c747c7924c3977e308f841acbef61abdaa"
+  integrity sha512-giwweEawiOHLS8eMPNtpLJaYxWZIHxtJcoq0NyvtEqVx2pxZ8XX1AXHHx84hUK3Scl8vk4U4lEatG54nsMZo+Q==
+
 emittery@^0.13.1:
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/emittery/-/emittery-0.13.1.tgz#c04b8c3457490e0847ae51fced3af52d338e3dad"

@@ -19,6 +19,7 @@
     "color-rgba": "^2.4.0",
     "copy-to-clipboard": "^3.3.3",
     "core-js": "^3.32.1",
+    "elizabot": "^0.0.3",
     "env-cmd": "^10.1.0",
     "immutable": "^5.0.0-beta.2",
     "jquery": "^3.7.0",
